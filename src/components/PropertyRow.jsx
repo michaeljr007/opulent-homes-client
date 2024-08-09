@@ -99,7 +99,12 @@ const PropertyRow = () => {
       </span>
 
       {/* Scrollable Row */}
-      <Carousel responsive={responsive} swipeable draggable>
+      <Carousel
+        className="h-[50vh] md:h-[60vh]"
+        responsive={responsive}
+        swipeable
+        draggable
+      >
         {properties.map((property) => (
           <div key={property.id}>
             <PropertyColumn

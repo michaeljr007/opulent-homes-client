@@ -17,7 +17,7 @@ const PropertyColumn = ({ name, location, img, condition, price }) => {
       transition={{
         duration: 2,
       }}
-      className="text-left rounded-lg shadow-lg mx-auto lg:w-[80%] w-[86%] py-3 px-1 hover:shadow-2xl"
+      className="text-left rounded-lg shadow-lg shadow-gray-400 mx-auto lg:w-[70%] w-[86%] py-3 px-1 hover:shadow-xl hover:shadow-gray-500"
     >
       <div>
         <img
