@@ -4,7 +4,9 @@ import axios from "axios";
 
 // Async thunk to fetch the code from the server
 export const fetchCode = createAsyncThunk("code/fetchCode", async () => {
-  const response = await axios.get("/api/v1/entry-code");
+  const response = await axios.get(
+    "https://opulent-homes-server.onrender.com/api/v1/entry-code"
+  );
   let data = response.data;
   let code = data.secretCode;
 

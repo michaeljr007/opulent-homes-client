@@ -34,7 +34,10 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/api/v1/users/login", formData);
+      const response = await axios.post(
+        "https://opulent-homes-server.onrender.com/api/v1/users/login",
+        formData
+      );
       const { data } = response;
 
       if (data.user) {

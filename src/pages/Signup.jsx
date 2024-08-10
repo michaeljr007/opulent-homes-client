@@ -32,7 +32,10 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const result = await axios.post("/api/v1/users/signup", formData);
+      const result = await axios.post(
+        "https://opulent-homes-server.onrender.com/api/v1/users/signup",
+        formData
+      );
       const { msg } = result.data;
       const { newUser } = result.data;
       console.log(result);
